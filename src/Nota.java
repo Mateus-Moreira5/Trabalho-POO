@@ -37,9 +37,7 @@ public class Nota {
     
     @Override
     public String toString() {
-        return "Estudante ID: " + idEstudante + 
-               " | Disciplina: " + codigoDisciplina + 
-               " | Nota: " + valor;
+        return codigoDisciplina + "(" + valor + ")";
     }
     
     @Override
