@@ -13,20 +13,20 @@ public class App {
     private static void carregarDataset() {
         System.out.println("=== CARREGANDO DATASET DO PDF ===\n");
 
-        // Carregar estudantes (conforme PDF)
+        // EXEMPLO: Carregar estudantes
         listaEstudantes.adicionarEstudante(new Estudante(1, "Ana"));
         listaEstudantes.adicionarEstudante(new Estudante(2, "Bruno"));
         listaEstudantes.adicionarEstudante(new Estudante(3, "Carla"));
         listaEstudantes.adicionarEstudante(new Estudante(4, "Diego"));
         listaEstudantes.adicionarEstudante(new Estudante(5, "Elisa"));
 
-        // Carregar disciplinas (conforme PDF)
+        // EXEMPLO: Carregar disciplinas
         listaDisciplinas.adicionarDisciplina(new Disciplina("MAT101", "Matemática"));
         listaDisciplinas.adicionarDisciplina(new Disciplina("PRG201", "Programação"));
         listaDisciplinas.adicionarDisciplina(new Disciplina("BD301", "Banco de Dados"));
         listaDisciplinas.adicionarDisciplina(new Disciplina("EDF110", "Educação Física"));
 
-        // Carregar notas/matrículas (conforme PDF)
+        // EXEMPLO: Carregar notas
         listaNotas.adicionarNota(new Nota(1, "MAT101", 8.5));
         listaNotas.adicionarNota(new Nota(1, "PRG201", 9.0));
         listaNotas.adicionarNota(new Nota(2, "PRG201", 7.0));
