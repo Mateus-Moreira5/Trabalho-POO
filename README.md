@@ -1,18 +1,32 @@
-## Getting Started
+🎓 Sistema de Gestão Escolar
+Sistema desenvolvido em Java para gerenciamento de estudantes, disciplinas e notas utilizando coleções do Java.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+📋 Funcionalidades
+Cadastro de Estudantes - Lista ordenável por nome.
+Controle de Disciplinas - Evita duplicatas.
+Histórico de Notas - Associa estudantes às disciplinas.
+Relatórios - Médias, alunos aprovados, rankings.
 
-## Folder Structure
+🏗️ Estrutura do Projeto
+📦 Sistema Escolar
+├── 📄 Estudante.java          # Classe estudante (id, nome)
+├── 📄 Disciplina.java         # Classe disciplina (código, nome)  
+├── 📄 Matricula.java          # Classe matrícula (disciplina, nota)
+├── 📄 ListaEstudantes.java    # Gerencia lista de estudantes
+├── 📄 CadastroDisciplinas.java # Controla disciplinas (Set)
+├── 📄 HistoricoNotas.java     # Gerencia notas (Map)
+└── 📄 App.java                # Programa principal
 
-The workspace contains two folders by default, where:
+🚀 Como Executar
+1. Compile todos os arquivos .java:
+    Execute esse comando no cmd: "javac *.java".
+2. Execute a classe principal:
+    Execute esse comando no cmd: "java App".
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+📊 Coleções Utilizadas
+List - ArrayList para estudantes.
+Set - LinkedHashSet para disciplinas.
+Map - HashMap para histórico de notas.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+🎯 Objetivo
+Trabalho acadêmico para demonstrar o uso prático das coleções Java (List, Set, Map) em um sistema real de gestão escolar.
