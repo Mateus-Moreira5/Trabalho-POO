@@ -31,4 +31,7 @@ public class ListaDisciplina {
     public Set<Disciplina> obterTodasDisciplinas(){
         return listaDisciplinas;
     }
+    public int getTamanho(){
+        return listaDisciplinas.size();
+    }
 }

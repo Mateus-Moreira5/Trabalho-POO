@@ -45,4 +45,7 @@ public class ListaEstudante {
             }
         });
     }
+    public int getTamanho(){
+        return listaEstudantes.size();
+    }
 }
