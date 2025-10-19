@@ -1,6 +1,10 @@
 # 🎓 Sistema de Gestão Escolar - POO
-
 Sistema desenvolvido em Java para gerenciamento de estudantes, disciplinas e notas utilizando coleções Java (List, Set, Map).
+- Integrantes:
+  - Mateus Moreira Fernandes.
+  - Ian Brito Ribeiro de Castro.
+  - Caio Vitor Campelo Alcântara.
+
 
 ## 📋 Funcionalidades
 
