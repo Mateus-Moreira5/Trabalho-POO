@@ -1,33 +1,35 @@
 # 🎓 Sistema de Gestão Escolar - POO
-Sistema desenvolvido em Java para gerenciamento de estudantes, disciplinas e notas utilizando coleções Java (List, Set, Map).
-- Integrantes:
-  - Mateus Moreira Fernandes.
-  - Ian Brito Ribeiro de Castro.
-  - Caio Vitor Campelo Alcântara.
 
+## 👥 Integrantes do Grupo
+- Mateus Moreira Fernandes.
+- Ian Brito Ribeiro de Castro.
+- Caio Vitor Campelo Alcântara.
 
-## 📋 Funcionalidades
+## 📋 Descrição do Projeto
+Sistema desenvolvido em Java para gerenciamento de estudantes, disciplinas e notas de uma escola, utilizando coleções Java para armazenamento e manipulação de dados em memória.
 
-- **Cadastro de Estudantes** - Lista ordenável por nome
-- **Controle de Disciplinas** - Evita duplicatas usando Set
-- **Histórico de Notas** - Associa estudantes às disciplinas usando Map
-- **Relatórios** - Médias, alunos aprovados, rankings
+## 🎯 Justificativa das Escolhas das Coleções
 
-## 🏗️ Estrutura do Projeto
+### **List - ArrayList para Estudantes**
+- **Escolha:** `ArrayList<Estudante>`
+- **Justificativa:** Permite acesso rápido por índice, mantém ordem de inserção e é eficiente para buscas sequenciais. Ideal para lista de estudantes que precisa ser ordenada e acessada por posição.
 
-### Classes Principais
-- `Estudante` - ID e nome do estudante
-- `Disciplina` - Código e nome da disciplina  
-- `ListaEstudante` - Gerencia lista de estudantes (ArrayList)
-- `ListaDisciplina` - Controla disciplinas (LinkedHashSet)
-- `ListaNota` - Gerencia notas e matrículas
-- `App` - Programa principal com relatórios
+### **Set - LinkedHashSet para Disciplinas**  
+- **Escolha:** `LinkedHashSet<Disciplina>`
+- **Justificativa:** Garante unicidade (evita disciplinas duplicadas) e mantém a ordem de inserção, importante para exibir disciplinas na ordem em que foram cadastradas.
 
-## 🚀 Como Executar
+### **Map - HashMap para Notas**
+- **Escolha:** `HashMap` para associação estudante-disciplina-nota
+- **Justificativa:** Acesso rápido O(1) para buscar notas por estudante e disciplina, estrutura ideal para relações chave-valor.
 
+## 🚀 Como Executar o Programa
+
+### Passo a Passo:
 ```bash
-# Compilar
+# 1. Compilar todos os arquivos Java
 javac *.java
 
-# Executar
+# 2. Executar o programa principal
 java App
+
+# 3. O arquivo output.txt será gerado automaticamente
